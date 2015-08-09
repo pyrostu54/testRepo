@@ -92,4 +92,8 @@
     }
 }
 
+- (IBAction)startServer:(id)sender {
+    
+    NSLog(@"Start Server!");
+}
 @end

@@ -12,6 +12,7 @@
 
 @property (weak) IBOutlet NSTableView* tableView;
 @property (nonatomic, strong) NSMutableArray* data;
+- (IBAction)startServer:(id)sender;
 
 @end
 
