@@ -34,17 +34,19 @@
     return 100;
 }
 
-//- (NSView *)tableView:(NSTableView *)tableView
-//   viewForTableColumn:(NSTableColumn *)tableColumn
-//                  row:(NSInteger)row
-//{
-//    NSRect frameRect = NSMakeRect(0.0, 0.0, 1000.0, 1000.0);
-//    NSView* someView = [[NSView alloc] initWithFrame:frameRect];
-//
-//    someView.layer.backgroundColor = [NSColor greenColor].CGColor;
-//    
-//    return someView;
-//}
+- (NSView *)tableView:(NSTableView *)tableView
+   viewForTableColumn:(NSTableColumn *)tableColumn
+                  row:(NSInteger)row
+{
+    NSRect frameRect = NSMakeRect(0.0, 0.0, 1000.0, 1000.0);
+    NSTextField* someView = [[NSTextField alloc] initWithFrame:frameRect];
+
+    someView.layer.backgroundColor = [NSColor greenColor].CGColor;
+    
+    [someView setStringValue:@"BLAH"];
+    
+    return someView;
+}
 
 #pragma mark - Custom Initialisers
 
